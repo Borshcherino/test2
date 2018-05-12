@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="logo header__logo">
+                <span class="logo__h" id="logo">Cozy House</span><br>
+                <span class="logo__p">Shelter for pets in Boston</span>
+            </div>
+            <nav class="nav header__nav">
+                <div class="nav__item"><a class="nav__link" href="#about">About the shelter</a></div>
+                <div class="nav__item"><a class="nav__link" href="#pets">Our pets</a></div>
+                <div class="nav__item"><a class="nav__link" href="#tohelp">To help the shelter</a></div>
+                <div class="nav__item"><a class="nav__link" href="#contacts">Contacts</a></div>
+            </nav>
+                <div class="hamburger"><a href="#">__</a>
+                	<ul class="hamburger__submenu">
+                		<li><a href="#about">About us</a></li>
+                		<li><a href="#pets">Our pets</a></li>
+                		<li><a href="tohelp">To help us</a></li>
+                		<li><a href="#contacts">Contacts</a></li>
+                	</ul>
+                </div>
+            <div class="description header__description">
+                <h1 class="description__h">Not only people need a house</h1>
+                <p class="description__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos accusantium alias, numquam ut mollitia, architecto aliquid est quis rem fuga voluptatibus quam. Reprehenderit? </p>
+            </div>
+            <button class="btn header__btn" onclick="friendToggle()">Make a friend</button>
+            <section class="makeafriend_hidden show">
+                <div class="makeafriend__friend">
+                    <button class="btn__hide" onclick="friendToggle()">X</button>
+                    <img src="img/hidden/dog1-hidden.png" alt="pet" width="235" height="235">
+                    <div class="description_hidden">
+                        <h2 class="makeafriend__title_hidden">Jennifer</h2>
+                        <h3 class="makeafriend__title_hidden_small">Pooch + Labrador</h3>
+                        <p class="makeafriend__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quaerat quae, voluptas neque rem cum provident hic, a blanditiis molestias voluptates veniam</p>
+                        <ul class="makeafriend__petinfo">
+                            <li><p class="petinfo__item"><strong>Age:</strong>2 months</p></li>
+                            <li><p class="petinfo__item"><strong>Inoculations:</strong>none</p></li>
+                            <li><p class="petinfo__item"><strong>Diseases:</strong>none</p></li>
+                            <li><p class="petinfo__item"><strong>Parasites:</strong>none</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="makeafriend__friend">
+                    <img src="img/hidden/Cat1-hidden.png" alt="pet"  width="235" height="235">
+                    <div class="description_hidden">
+                        <h2 class="makeafriend__title_hidden">Freddie</h2>
+                        <h3 class="makeafriend__title_hidden_small">Pooch</h3>
+                        <p class="makeafriend__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quaerat quae, voluptas neque rem cum provident hic, a blanditiis molestias voluptates veniam</p>
+                        <ul class="makeafriend__petinfo">
+                            <li><p class="petinfo__item"><strong>Age:</strong>4 months</p></li>
+                            <li><p class="petinfo__item"><strong>Inoculations</strong>none</p></li>
+                            <li><p class="petinfo__item"><strong>Diseases</strong>none</p></li>
+                            <li><p class="petinfo__item"><strong>Parasites</strong>none</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <main>
+            <section class="main__about" id="about" >
+               <div class="wrapper wrapper_flex">
+                    <img class="section__img" src="img/about-pets.png" alt="pets" width="300" height="408">
+                    <div class="section__description">
+                        <h2 class="section__title">About the shelter <br>"Cozy House"</h2>
+                        <p class="section__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque tempora, delectus beatae eos, itaque distinctio voluptatem cumque! Delectus, illo ipsum minima voluptatem blanditiis.</p>
+                        <p class="section__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero nemo inventore commodi aliquam quae eaque dicta quisquam ipsum, molestias, in quos soluta animi dolores nulla aperiam, facere! Placeat illo tempore inventore nihil obcaecati numquam enim omnis facilis repellat reiciendis voluptatem quis ipsum, officiis quisquam saepe nulla autem voluptates, ullam tempora.</p>
+                    </div>
+                </div>
+                <!--<a href="#logo" class="btn__totop"></a>-->
+            </section>
+            <section class="main__pets" id="pets">
+                <div class="wrapper">  
+                    <h2 class="section__title section__title_centered">Our friends <br>who are looking for a house</h2>
+                    <div class="pets__slider">
+                         <div class="slider__inner">  
+                            <div class="slide">
+                                <img src="img/pets-pet1.png" alt="">
+                                <h3 class="slide__title">Katrine</h3>
+                                <button class="btn slide__btn">Learn More</button>
+                            </div>
+                            <div class="slide">
+                                <img src="img/pets-pet2.png" alt="">
+                                <h3 class="slide__title">Jennifer</h3>
+                                <button class="btn slide__btn">Learn More</button>
+                            </div>
+                            <div class="slide">
+                                <img src="img/pets-pet3.png" alt="">
+                                <h3 class="slide__title">Woody</h3>
+                                <button class="btn slide__btn">Learn More</button>
+                            </div>
+                            <div class="slide">
+                                <img src="" alt="">
+                                <h3 class="slide__title">Katrine</h3>
+                                <button class="btn slide__btn">Learn More</button>
+                            </div>
+                            <div class="slide">
+                                <img src="" alt="">
+                                <h3 class="slide__title">Jennifer</h3>
+                                <button class="btn slide__btn">Learn More</button>
+                            </div>
+                            <div class="slide">
+                                <img src="" alt="">
+                                <h3 class="slide__title">Woody</h3>
+                                <button class="btn slide__btn">Learn More</button>
+                            </div>
+                        </div> 
+                        <button class="btn pets__btn_prev"></button>
+                        <button class="btn pets__btn_next"></button>   
+                    </div>
+                    <button class="btn pets__btn">Get to know the rest</button>
+                </div>    
+            </section>
+            <section class="main__tohelp" id="tohelp">
+               <div class="wrapper">
+                   <h2 class="section__title section__title_centered">Than you can help <br>our shelter</h2>
+                   <div class="tohelp__imgholder">
+                       <div class="tohelp__pic">
+                          <div>
+                           <img class="tohelp__icon" src="img/icons/cat-food.png" alt="cat food" style="max-width: 45px; max-height: 57px">
+                          </div>
+                           <h3 class="slide__title">Pet food</h3>
+                       </div>
+                       <div class="tohelp__pic">
+                          <div>
+                           <img class="tohelp__icon" src="img/icons/ambulance.png" alt="ambulance" style="max-width: 65px; max-height: 65px">
+                          </div>
+                           <h3 class="slide__title">Transportation</h3>
+                       </div>
+                       <div class="tohelp__pic">
+                          <div>
+                           <img class="tohelp__icon" src="img/icons/ball.png" alt="ball" style="max-width: 58px; max-height: 58px">
+                          </div> 
+                           <h3 class="slide__title">Toys</h3>
+                       </div>
+                       <div class="tohelp__pic">
+                          <div>
+                           <img class="tohelp__icon" src="img/icons/bowl.png" alt="bowl" style="max-width: 58px; max-height: 55px">
+                          </div>
+                           <h3 class="slide__title">Bowls and cups</h3>
+                       </div>
+                       <div class="tohelp__pic">
+                          <div>
+                           <img class="tohelp__icon" src="img/icons/shampoo.png" alt="shampoo" style="max-width: 30px; max-height: 58px">
+                          </div> 
+                           <h3 class="slide__title">Shampoos</h3>
+                       </div>
+                       <div class="tohelp__pic">
+                          <div>
+                           <img class="tohelp__icon" src="img/icons/pills.png" alt="pills" style="max-width: 64px; max-height: 57px">
+                          </div>
+                           <h3 class="slide__title">Vitamins</h3>
+                       </div>
+                       <div class="tohelp__pic">
+                          <div>
+                           <img class="tohelp__icon" src="img/icons/syringe.png" alt="syringe" style="max-width: 58px; max-height: 58px">
+                          </div> 
+                           <h3 class="slide__title">Medicines</h3>
+                       </div>
+                       <div class="tohelp__pic">
+                          <div>
+                           <img class="tohelp__icon" src="img/icons/leash.png" alt="leash" style="max-width: 65px; max-height: 57px">
+                          </div> 
+                           <h3 class="slide__title">Collars / leashes</h3>
+                       </div>
+                       <div class="tohelp__pic">
+                          <div>
+                           <img class="tohelp__icon" src="img/icons/cat.png" alt="cat" style="max-height: 57px; max-width: 54px">
+                          </div> 
+                           <h3 class="slide__title">Sleeping area</h3>
+                       </div>
+                   </div>
+               </div>
+                
+            </section>
+            <section class="main__contacts" id="contacts">
+                <div class="wrapper wrapper_flex">
+                    <img class="contacts__img" src="img/contacts-Dog.png" alt="dog" width="505" height="261">
+                    <div class="section__description">
+                        <h2 class="section__title">In addition, you <br>can make a donation</h2>
+                        <form>
+                            <label for="paycard">Name of the bank / Type of the bank account
+                               <div class="input-pseudo">
+                                <input type="text" id="paycard" name="paycard" placeholder="0000 0000 0000 0000 0000">
+                               </div>
+                            </label>
+                        </form>
+                        <i class="section__i">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero nemo inventore commodi aliquam quae eaque dicta quisquam ipsum, molestias, in quos soluta animi dolores nulla aperiam, facere! Placeat illo tempore inventore nihil obcaecati numquam enim omnis facilis repellat reiciendis voluptatem quis ipsum.</i>
+                    </div>
+                </div>    
+            </section>
+
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__feedback">     
+                <div class="footer__questions">
+                    <h2 class="section__title section__title_white">For questions and <br>suggestions</h2>
+                    <p class="questions__mail">email@Shelter.com</p>
+                    <p class="questions__phone">+13 674 567 75 54</p>
+                </div>
+                <div class="footer__location">
+                    <h2 class="section__title  section__title_white">We are waiting <br>for your visit</h2>
+                    <p class="location__adress">Boston, Central Street, 1st <br>(Entrance from the store)</p>
+                    <p class="location__adress">London, South Park, 18st</p>
+                </div>
+            </div>      
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
