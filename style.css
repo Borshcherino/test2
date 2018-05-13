@@ -642,6 +642,7 @@ strong {
 	border-top-left-radius: 50px;
 	transition: all .4s ease-out;
 	font-size: 1.5em;
+	z-index: 2000;
 }
 .hamburger:hover {
 	width: 24.4%;
